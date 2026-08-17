@@ -7,7 +7,7 @@ import java.util.List;
 
 public class EstudianteDAO {
 
-    // 1. CREATE: Guardar un nuevo estudiante
+
     public boolean guardar(Estudiante estudiante) {
         String sql = "INSERT INTO estudiantes (nombre, email, carrera) VALUES (?, ?, ?)";
 
@@ -28,7 +28,7 @@ public class EstudianteDAO {
         }
     }
 
-    // 2. READ: Obtener todos los estudiantes
+    
     public List<Estudiante> listar() {
         List<Estudiante> lista = new ArrayList<>();
         String sql = "SELECT * FROM estudiantes";
@@ -53,7 +53,7 @@ public class EstudianteDAO {
         return lista;
     }
 
-    // 3. READ ONE: Buscar un solo estudiante por su ID
+
     public Estudiante buscarPorId(int id) {
         String sql = "SELECT * FROM estudiantes WHERE id = ?";
         Estudiante estudiante = null;
@@ -106,7 +106,7 @@ public class EstudianteDAO {
         }
     }
 
-    // 5. DELETE: Eliminar un estudiante por su ID
+
     public boolean eliminar(int id) {
         String sql = "DELETE FROM estudiantes WHERE id = ?";
 

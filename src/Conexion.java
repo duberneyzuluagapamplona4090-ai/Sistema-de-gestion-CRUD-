@@ -6,7 +6,7 @@ public class Conexion {
 
     private static final String URL = "jdbc:mysql://localhost:3306/gestion_estudiantes";
     private static final String USER = "root";
-    private static final String PASSWORD = "1090276225Dz."; // Cambia esto por tu clave de MySQL
+    private static final String PASSWORD = "1090276225Dz."; 
 
     public static Connection obtenerConexion() {
         Connection conexion = null;
